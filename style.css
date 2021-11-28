@@ -1,0 +1,50 @@
+html {
+  height: 100%;
+  font-size: 25px;
+}
+
+@media (max-width: 1920px) {
+  html {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1600px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+body {
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding-top: 20px;
+}
+
+.password {
+  align-self: center;
+  max-width: 700px;
+  width: 100%;
+}
+
+.password__inner {
+  padding: 2rem 3rem;
+}
+
+.password__call {
+  font-weight: 500;
+  font-size: 2rem;
+  margin: 0 0 2rem;
+}
+
+.password__input {
+  width: 20rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
