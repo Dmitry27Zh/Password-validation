@@ -34,10 +34,41 @@ body {
   margin: 0 0 2rem;
 }
 
+.password__input-wrp {
+  margin-bottom: 1rem;
+}
+
 .password__input {
   width: calc(100% - 2rem - 4px);
   padding: 0.5rem 1rem;
   font-size: 1rem;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.password__btns {
+  display: flex;
+}
+
+.password__btn {
+  padding: 0.1rem 0.5rem;
+  font: inherit;
+}
+
+.password__btn:first-child {
+  margin-right: 0.7rem;
+}
+
+.password__error {
+  max-height: 0;
+  color: tomato;
+  text-align: center;
+  overflow: hidden;
+}
+
+.password__error-message {
+  margin: 0;
+  padding-top: 1rem;
 }
 
 @media (max-width: 1920px) {
@@ -54,13 +85,17 @@ body {
 
 @media (max-width: 768px) {
   html {
-    font-size: 14px;
+    font-size: 18px;
   }
-}
 
-@media (max-width: 350px) {
-  html {
-    font-size: 10px;
+  .password__inner {
+    width: 100%;
+    max-width: 15rem;
+    padding: 1rem 0.7rem;
+  }
+
+  .password__call {
+    font-size: 1.6rem;
   }
 }
 

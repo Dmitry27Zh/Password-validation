@@ -15,7 +15,19 @@
       <hr>
       <div class="password__inner">
         <h2 class="password__call">Enter your password:</h2>
-        <input class="password__input" id="input" type="text" name="password" required>
+        <div class="password__input-wrp">
+          <input class="password__input" id="input" type="text" name="password" aria-label="password" required>
+        </div>
+        <div class="password__btns">
+          <button class="password__btn" type="reset">Clear</button>
+          <button class="password__btn" type="submit" disabled>Done</button>
+        </div>
+        <div class="password__error">
+          <p class="password__error-message">
+            Password should contain at least 1 lowercase letter, 1 uppercase letter and 1 special character. The minimum
+            length is 8, the maximum is 20.
+          </p>
+        </div>
       </div>
       <hr>
     </form>
