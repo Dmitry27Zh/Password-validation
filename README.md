@@ -1,2 +1,2 @@
-# Password-validation
+# Password validation
 Password validation with RegExp
