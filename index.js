@@ -1,5 +1,6 @@
 const wrp = input.closest('.password__inner')
 const submitBtn = password.querySelector('button[type="submit"]')
+const showBtn = document.getElementById('show')
 
 const regExp = /^(?=\S*?[a-z])(?=\S*?[A-Z])(?=\S*?[\d])\S{8,20}$/
 
@@ -27,4 +28,14 @@ password.addEventListener('submit', onPasswordSubmit)
 password.addEventListener('reset', () => {
   wrp.removeAttribute('data-state');
   password.removeAttribute('data-submitted')
+})
+
+showBtn.addEventListener('click', () => {
+  if (showBtn.textContent == 'Show password') {
+    input.type = 'text'
+    showBtn.textContent = 'Hide password'
+  } else {
+    input.type = 'password'
+    showBtn.textContent = 'Show password'
+  }
 })

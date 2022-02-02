@@ -73,8 +73,12 @@ body {
   font: inherit;
 }
 
-.password__btn:first-child {
+.password__btn:not(:last-child) {
   margin-right: 0.7rem;
+}
+
+.password__btn:last-child {
+  margin-left: auto;
 }
 
 .password__error {
